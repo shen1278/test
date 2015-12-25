@@ -37,13 +37,13 @@ def ifShopId(userId,userPass,flag):
 			flag += 1
 			print "你输入的密码错误,请重新输入!"
 	else:
-		# if userId == 'quit':
-		# 	print "系统即将退出!"
-		# 	time.sleep(1)
-		# 	main.welcome()
-		# else:
-		# 	flag += 1
-		# 	print "你输入的用户名有误,请重新输入!"
+		if userId == 'quit':
+			print "系统即将退出!"
+			time.sleep(1)
+			main.welcome()
+		else:
+			flag += 1
+			print "你输入的用户名有误,请重新输入!"
 		flag += 1
 		print "你输入的用户名有误,请重新输入!"
 def LoginShopSucess(userId):
